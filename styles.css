@@ -1,1 +1,50 @@
 /*  your css code here. If applicable */
+.hero{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 90vh;
+	overflow: hidden;
+}
+.hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures the image is clipped properly */
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(70%);
+}
+.hero-content {
+  text-align: inline;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box; /* using box model */
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Explore button */
+.btn {
+  padding: 10px 25px;
+  background-color: #e60023;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c7001f;
+}
