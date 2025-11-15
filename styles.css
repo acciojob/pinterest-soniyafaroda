@@ -1,16 +1,17 @@
 /*  your css code here. If applicable */
+body{
+	background-color: black;
+}
 .hero{
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	position: relative;
 	height: 90vh;
 	overflow: hidden;
 }
 .hero img {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 30vh;
   object-fit: cover; /* ensures the image is clipped properly */
   top: 0;
   left: 0;
@@ -18,7 +19,6 @@
   filter: brightness(70%);
 }
 .hero-content {
-  text-align: inline;
   color: white;
   padding: 20px;
   box-sizing: border-box; /* using box model */
@@ -32,6 +32,7 @@
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+	
 }
 
 /* Explore button */
